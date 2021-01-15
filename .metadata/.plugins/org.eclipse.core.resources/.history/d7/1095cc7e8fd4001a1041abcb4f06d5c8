@@ -1,0 +1,36 @@
+package Testscripts;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Generic.Open_close_browser;
+import POM.Loginpage;
+import POM.Taskpage;
+import POM.TimeTrackpage;
+
+
+public class Test_create_customer extends Open_close_browser
+{
+@Test
+	public void create_customer() throws Exception
+	{
+	Loginpage l=new Loginpage(driver);
+	l.username();
+	l.password();
+	l.loginbutton();
+    Thread.sleep(3000);
+	String title=driver.getTitle();
+	WebDriverWait wait=new WebDriverWait(driver, 20);
+	wait.until(ExpectedConditions.titleContains("Enter Time"));
+	System.out.println(title);
+	Assert.assertEquals(title, "actiTIME - Enter Time-Track");
+	TimeTrackpage t=new TimeTrackpage(driver);
+	t.Tasks();
+	Taskpage ts=new Taskpage(driver);
+	ts.Addnew();
+	ts.Newcustomer();
+			
+	}
+}

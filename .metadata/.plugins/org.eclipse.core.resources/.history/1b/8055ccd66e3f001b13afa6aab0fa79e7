@@ -1,0 +1,6 @@
+Feature: Login
+Scenario: Login to application
+Given: user should login to application
+when: user enter username and password
+And: user should click on login button
+Then: user successfully logged into application

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;data.xlsx&apos; to &apos;Actitime/src/Testdata&apos;&#x0D;&#x0A;- Original project: &apos;Actitime&apos;&#x0D;&#x0A;- Destination element: &apos;Actitime/src/Testdata&apos;&#x0D;&#x0A;- Original element: &apos;data.xlsx&apos;" description="Copy file" destination="/src&lt;Testdata" element1="data.xlsx" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1606030820678" units="0" version="1.0"/>
+</session>

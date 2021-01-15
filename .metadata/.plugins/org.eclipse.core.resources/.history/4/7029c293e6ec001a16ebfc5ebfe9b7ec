@@ -1,0 +1,21 @@
+package Generic;
+
+public class example {
+
+	public static void main(String[] args) 
+	{
+		String s="Let's meet l8r 2nite?";
+		String s1=s.replaceAll("[^a-zA-Z]"," ");
+		System.out.print(s1);
+		String[] str=s1.split(" ");
+		int count=0;
+		
+		for (int i = 1; i < str.length; i++) 
+		{
+			count++;	
+		}
+		System.out.print(count);
+	}
+	
+
+}
